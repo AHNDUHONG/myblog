@@ -33,4 +33,4 @@ date: '2022-04-10'
     Everything up-to-date
     branch 'master' set up to track
     
-    ![png](images/Github(hexo)/Github_blo%207494b/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-10_230334.png)
+    ![png](images/Github(hexo)/Github_capture_01.png)
