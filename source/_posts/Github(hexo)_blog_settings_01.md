@@ -6,12 +6,12 @@ categories: 'blog'
 tags: 'blog'
 ---
 
-# Github_blog (hexo) 테마 변경 및 환경 설정
+### 개요
 
 - 이 글은 Github blog를 관리 및 운영하는데 필자가 겪은 에러, 어려움 등을 해결하는 과정을 기록할 목적으로 만들어졌습니다.
     
     ---
-    
+
 - 평소 Github 블로그에 대해 그 날 들은 강의들만 올리다가 강사님의 따끔하신 일침으로 제대로 된 관리를 해보자 라는 생각이 들어 실행에 옮겨보았다. Github 블로그에 글을 올리는 것은 가능했으나 글을 분류하기 위한 카테고리, 태그 등 깔끔하게 블로그 관리를 못하는 상황이라 블로그를 새롭게 개편해보기로 마음 먹었다.
 
 ### 테마
@@ -34,18 +34,18 @@ tags: 'blog'
 - 테마 변경 후 블로그 환경 설정을 위해 사이드바 메뉴 설정 및 RSS feed 등 변경
     - 테마 이미지 및 프로필 이미지, favicon 수정 및 categories, tags, archives 설정 후 확인
         
-        ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_101012.png)
+        ![png](images/Github(hexo)_blog_settings_01/1.png)
         
         - email 설정은 url이 mailto라고 되어 있을텐데 mailto:사용자아이디@메일 로 변경
         - 참고 사이트 [https://wonderbout.tistory.com/127](https://wonderbout.tistory.com/127)
     
     - 테마, 프로필 이미지 및 favicon 수정은 잘되었으나 categories, tags, archives 등 아래 사진과 같이 되어 확인.
         
-        ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_101240.png)
+        ![png](images/Github(hexo)_blog_settings_01/2.png)
         
         - 확인 해보니 잘못된 저장 경로({project_name}/themes/tranquilpeak/source/all-categories)에 위치하여 {project_name}/source/all-categories 로 변경 후 확인, 정상 작동
             
-            ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_103642.png)
+            ![png](images/Github(hexo)_blog_settings_01/3.png)
             
             - 참고 사이트 [https://allaboutmoon.tistory.com/232](https://allaboutmoon.tistory.com/232)
         - categories 와 tags이 비어 있어 작성한 글에 categories 및 tags 추가 후 확인, 정상 작동
@@ -60,4 +60,4 @@ tags: 'blog'
             ---
             ```
             
-            ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_105445.png)
+            ![png](images/Github(hexo)_blog_settings_01/4.png)
