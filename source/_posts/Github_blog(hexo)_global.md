@@ -70,21 +70,21 @@ tags: 'global'
     
     - **‘git config —system —unset credential.helper’ 명령어를 입력한다.(오타 주의)**
         
-        ![Untitled](Github_blo%20dbe07/Untitled%204.png)
+        ![png](images/Github_blog(hexo)_global/4.png)
         
     
     ---
     
     - **‘git config —global —unset credential.helper’  명령어를 입력한다.**
         
-        ![Untitled](Github_blo%20dbe07/Untitled%205.png)
+        ![png](images/Github_blog(hexo)_global/5.png)
         
     
     ---
     
     - **다시 작업 했던 Project(필자는 Pycharm을 사용)로 돌아와 git add, commit, push 를 해주면 계정을 입력하라는 내용이 나온다.**
         
-        ![Untitled](Github_blo%20dbe07/Untitled%206.png)
+        ![png](images/Github_blog(hexo)_global/6.png)
         
     
     ---
