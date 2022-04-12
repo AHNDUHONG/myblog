@@ -46,16 +46,6 @@ sidebar:
             title: global.archives
             url: /all-archives
             icon: fa fa-archive
-        search:
-            title: global.search
-            url: "#search"
-            icon: fa fa-search
-            # `open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
-        about:
-            title: global.about
-            url: "#about"
-            icon: fa fa-question
     author_links:
         github:
             title: global.github
@@ -83,8 +73,19 @@ sidebar:
 #            icon: fab fa-linkedin
         mail:
             title: global.mail
-            url: mailto
+            url: mailto:dksenghd123@naver.com
             icon: fa fa-envelope
+        # search 와 about은 menu에 속해 있었으나 정렬을 위해 author_links 안으로 위치를 옮김.
+        search:
+            title: global.search
+            url: "#search"
+            icon: fa fa-search
+            # `open-algolia-search` classes are used to open algolia search modal
+            class: open-algolia-search
+        about:
+            title: global.about
+            url: "#about"
+            icon: fa fa-question
     rss:
         rss:
             title: global.rss
