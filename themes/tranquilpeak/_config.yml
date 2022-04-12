@@ -226,7 +226,7 @@ gitalk:
     post_identifier: path
     # See all options: https://github.com/gitalk/gitalk#options
     options:
-        language: "en"
+        language: "ko"
         perPage: 10
         distractionFreeMode: false
         enableHotKey: true
