@@ -13,7 +13,7 @@ tags: 'global'
 
 ### 개요
 
-- 깃허브 블로그 계정 연동 오류 fatal: Authentication failed for ~ 를 github tokken 이 아닌 —global로 해결하는 방법을 나타냄 **(21년 8월 이후 변경된 토큰으로 인해 토큰을 이용 하지 않으면 불가능한 방법입니다, 아래 링크 글로 이동한 뒤 참고하여 해결하세요.)**
+- 깃허브 블로그 계정 연동 오류 fatal: Authentication failed for ~ 를 github tokken 이 아닌 —global로 해결하는 방법을 나타냄 **<u><span style="color:red">(21년 8월 이후 변경된 토큰으로 인해 토큰을 이용 하지 않으면 불가능한 방법입니다, 아래 링크 글로 이동한 뒤 참고하여 해결하세요.)</span></u>**
     - Github_blog (hexo) 연동 오류 -tokken : [https://ahnduhong.github.io/2022/04/12/Github_blog(hexo)_tokken/](https://ahnduhong.github.io/2022/04/12/Github_blog(hexo)_tokken/)
 
 ---
@@ -55,7 +55,7 @@ tags: 'global'
     
     ---
     
-    - **그 후에 Pycharm(필자는 Pycharm을 통해 프로젝트를 관리 하는중)에 돌아와 다시 git add, commit, push 를 하면 fatal: Authentication failed for ~ 라는 문구가 뜬다. 이 문구는 local 계정과 github 계정의 연동이 틀려서 나오는 것이고 ID/Password 는 21년 8월 이후로 토큰으로 대체 되었다 라는 의미입니다. 즉 계정 연동을 다시 해줘야 한다는 뜻이므로 이번엔 tokken이 아닌 git config —global 방식으로 해결하겠습니다.**
+    - **그 후에 Pycharm(필자는 Pycharm을 통해 프로젝트를 관리 하는중)에 돌아와 다시 git add, commit, push 를 하면 <span style="color:red">fatal: Authentication failed for ~</span> 라는 문구가 뜬다. 이 문구는 <span style="color:blue">local 계정과 github 계정의 연동이 틀려서 나오는 것이고 ID/Password 는 21년 8월 이후로 토큰으로 대체 되었다 라는 의미입니다.</span> 즉 계정 연동을 다시 해줘야 한다는 뜻이므로 이번엔 tokken이 아닌 git config —global 방식으로 해결하겠습니다.**
     
 
 ## git config —global
