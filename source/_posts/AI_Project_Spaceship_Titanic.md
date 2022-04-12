@@ -2,6 +2,8 @@
 title: "AI_Project_SpaceShip_Titanic"
 author: "winters"
 date: '2022-04-06'
+categories: 'Project'
+tags: 'project'
 ---
 
 # 프로젝트 개요

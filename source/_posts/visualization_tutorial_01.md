@@ -2,6 +2,8 @@
 title: "visualization 튜토리얼 1"
 author: "winters"
 date: '2022-03-25'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 라이브 러리 불러오기

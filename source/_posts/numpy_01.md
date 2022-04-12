@@ -2,6 +2,8 @@
 title: "파이썬 넘파이 1"
 author: "winters"
 date: '2022-03-23'
+categories: 'Education'
+tags: 'edu'
 ---
 
 - 파이썬 라이브러리 설치 방법 (vs R)

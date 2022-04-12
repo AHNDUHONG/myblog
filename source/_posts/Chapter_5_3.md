@@ -2,6 +2,8 @@
 title: "마켓과 머신러닝(Chapter_5_3)"
 author: "winters"
 date: '2022-03-30'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 트리의 앙상블

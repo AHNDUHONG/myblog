@@ -2,6 +2,8 @@
 title: "마켓과 머신러닝(Chapter_6_2)"
 author: "winters"
 date: '2022-03-31'
+categories: 'Education'
+tags: 'edu'
 ---
 
 

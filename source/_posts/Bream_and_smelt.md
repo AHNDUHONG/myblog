@@ -2,6 +2,8 @@
 title: "마켓과 머신러닝(Chapter_1_3)"
 author: "winters"
 date: '2022-03-27'
+categories: 'Education'
+tags: 'edu'
 ---
 
 ## 생선 분류 문제

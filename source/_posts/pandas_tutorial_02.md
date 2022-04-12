@@ -2,6 +2,8 @@
 title: "판다스 튜토리얼 2"
 author: "winters"
 date: '2022-03-25'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 라이브러리 불러오기

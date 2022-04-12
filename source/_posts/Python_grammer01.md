@@ -2,6 +2,8 @@
 title: "파이썬 기초 문법 1"
 author: "winters"
 date: '2022-03-21'
+categories: 'Education'
+tags: 'edu'
 ---
 
 ```python

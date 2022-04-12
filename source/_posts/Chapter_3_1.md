@@ -2,6 +2,8 @@
 title: "마켓과 머신러닝(Chapter_3_1)"
 author: "winters"
 date: '2022-03-28'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 데이터 준비

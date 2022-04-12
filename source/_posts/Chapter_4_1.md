@@ -2,6 +2,8 @@
 title: "마켓과 머신러닝(Chapter_4_1)"
 author: "winters"
 date: '2022-03-29'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 데이터 불러오기 

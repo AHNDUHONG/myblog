@@ -2,6 +2,8 @@
 title: "아나콘다 설치"
 author: "winters"
 date: '2022-03-17'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 웹사이트

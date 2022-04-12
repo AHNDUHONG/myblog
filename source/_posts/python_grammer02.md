@@ -2,6 +2,8 @@
 title: "파이썬 기초 문법 2"
 author: "winters"
 date: '2022-03-22'
+categories: 'Education'
+tags: 'edu'
 ---
 
 ## 기초 문법 리뷰

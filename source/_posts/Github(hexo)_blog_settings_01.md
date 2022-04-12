@@ -1,10 +1,12 @@
 ---
-title: "깃허브(헥소) 블로그 환경설정 변경(미완성)"
+title: "Github_blog(hexo) 테마 변경 및 환경 설정"
 author: "winters"
-date: '2022-04-10'
+date: '2022-04-12'
+categories: 'blog'
+tags: 'blog'
 ---
 
-# Github_blog (hexo)
+# Github_blog (hexo) 테마 변경 및 환경 설정
 
 - 이 글은 Github blog를 관리 및 운영하는데 필자가 겪은 에러, 어려움 등을 해결하는 과정을 기록할 목적으로 만들어졌습니다.
     
@@ -26,11 +28,36 @@ date: '2022-04-10'
         - 참고 사이트 [https://ndb796.tistory.com/275](https://ndb796.tistory.com/275)
     - [rejected] master → master (non-fast-forward) : gitignore 파일 또는 [README.md](http://README.md) 파일의 문제로 인해 발생
         - 참고 사이트 [https://somjang.tistory.com/entry/Git-rejected-master-master-non-fast-forward-해결-방법](https://somjang.tistory.com/entry/Git-rejected-master-master-non-fast-forward-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95)
-- 테마 변경 후 블로그 환경 설정을 위해 사이드바 메뉴 설정 및 RSS feed 등 변경 중 일부 환경 설정들의 변경이 안되어 확인을 위해 작업한 terminal 을 체크하니 특이점 발생
-    - tranquilpeak 환경 설정 변경 참고 사이트 [https://wonderbout.tistory.com/127](https://wonderbout.tistory.com/127)
-    - On branch master
-    nothing to commit, working tree clean
-    Everything up-to-date
-    branch 'master' set up to track
+
+### 환경 설정
+
+- 테마 변경 후 블로그 환경 설정을 위해 사이드바 메뉴 설정 및 RSS feed 등 변경
+    - 테마 이미지 및 프로필 이미지, favicon 수정 및 categories, tags, archives 설정 후 확인
+        
+        ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_101012.png)
+        
+        - email 설정은 url이 mailto라고 되어 있을텐데 mailto:사용자아이디@메일 로 변경
+        - 참고 사이트 [https://wonderbout.tistory.com/127](https://wonderbout.tistory.com/127)
     
-    ![png](images/Github(hexo)/Github_capture_01.png)
+    - 테마, 프로필 이미지 및 favicon 수정은 잘되었으나 categories, tags, archives 등 아래 사진과 같이 되어 확인.
+        
+        ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_101240.png)
+        
+        - 확인 해보니 잘못된 저장 경로({project_name}/themes/tranquilpeak/source/all-categories)에 위치하여 {project_name}/source/all-categories 로 변경 후 확인, 정상 작동
+            
+            ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_103642.png)
+            
+            - 참고 사이트 [https://allaboutmoon.tistory.com/232](https://allaboutmoon.tistory.com/232)
+        - categories 와 tags이 비어 있어 작성한 글에 categories 및 tags 추가 후 확인, 정상 작동
+            
+            ```bash
+            ---
+            title: "AI_Project_SpaceShip_Titanic"
+            author: "winters"
+            date: '2022-04-06'
+            categories: 'Project'
+            tags: 'project'
+            ---
+            ```
+            
+            ![png](images/Github(hexo)_blog_settings_01/Github_blo%20a3cfb/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_105445.png)

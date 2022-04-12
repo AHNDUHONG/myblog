@@ -2,6 +2,8 @@
 title: "코랩 인트로"
 author: "winters"
 date: '2022-03-17'
+categories: 'Education'
+tags: 'edu'
 ---
 
 <h1>Colab이란?</h1>

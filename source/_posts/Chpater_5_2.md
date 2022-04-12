@@ -2,6 +2,8 @@
 title: "마켓과 머신러닝(Chapter_5_2)"
 author: "winters"
 date: '2022-03-30'
+categories: 'Education'
+tags: 'edu'
 ---
 
 # 교차 검증과 그리드 서치
