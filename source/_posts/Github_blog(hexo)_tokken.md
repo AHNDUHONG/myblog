@@ -27,15 +27,15 @@ tags: 'tokken'
     ![png](images/Github_blog(hexo)_tokken/2.png)
 
 - 처음에는 커밋(commit)이라는 단어를 내가 잘못 이해하고 있나 라고 의심을 해서 커밋에 대한 구글링을 했지만 내가 알고 있는 커밋이라는 용어가 틀리지 않았고 어떻게 해야될지 감이 안잡혀 evan 강사님([https://dschloe.github.io/](https://dschloe.github.io/))에게 여쭤보았고 방법을 알려주셨다.
-    **- windows 검색 화면에서 웹 자격 증명을 클릭**
+    - **windows 검색 화면에서 웹 자격 증명을 클릭**
     
     ![png](images/Github_blog(hexo)_tokken/3.png)
     
-    **- windows 자격 증명**
+    - **windows 자격 증명**
     
     ![png](images/Github_blog(hexo)_tokken/4.png)
     
-    **- 일반 자격 증명에서 github 목록을 클릭하여 편집을 눌러 계정을 다시 업데이트 한다**
+    - **일반 자격 증명에서 github 목록을 클릭하여 편집을 눌러 계정을 다시 업데이트 한다**
 
     ![png](images/Github_blog(hexo)_tokken/5.png)
 
@@ -46,30 +46,30 @@ tags: 'tokken'
 ## Tokken
 
 - [https://wotres.tistory.com/m/entry/Github-에러-해결법-Authentication-failed-for-use-a-personal-access-token-instead](https://wotres.tistory.com/m/entry/Github-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0%EB%B2%95-Authentication-failed-for-use-a-personal-access-token-instead) 고수트님의 블로그 내용을 참고하여 계정 연동을 시작
-    **- 깃허브 접속**
+    - **깃허브 접속**
         - [https://github.com/](https://github.com/)
     
-    **- 우측 상단의 settings 클릭**
+    - **우측 상단의 settings 클릭**
     
     ![png](images/Github_blog(hexo)_tokken/7.png)
     
-    **- 좌측 메뉴 끝에 developer settings 클릭**
+    - **좌측 메뉴 끝에 developer settings 클릭**
     
     ![png](images/Github_blog(hexo)_tokken/8.png)
     
-    **- Personal access tokens 클릭**
+    - **Personal access tokens 클릭**
     
     ![png](images/Github_blog(hexo)_tokken/9.png)
     
-    **- Note, expiration에 작성하고 싶은 내용, 기간 설정 후 repo 클릭 후 Generate tokken 클릭**
+    - **Note, expiration에 작성하고 싶은 내용, 기간 설정 후 repo 클릭 후 Generate tokken 클릭**
     
     ![png](images/Github_blog(hexo)_tokken/10.png)
     
-    **- 생성된 토큰 코드 복사**
+    - **생성된 토큰 코드 복사**
     
     ![png](images/Github_blog(hexo)_tokken/11.png)
     
-    **- git push**
+    - **git push**
         - git push를 입력하면 ID / Password 입력하라고 하는데 사용자의 깃허브 아이디와 복사한 토큰을 패스워드에 넣어주면 된다.(패스워드는 입력을 해도 보이지 않게 되어 필자는 ctrl+v로 붙여 넣었다. ***terminal 창에서 ctrl+v 로 붙여넣기가 되지않으면 insert 키로 붙여넣으면 됨.)
         
         ![png](images/Github_blog(hexo)_tokken/12.png)
