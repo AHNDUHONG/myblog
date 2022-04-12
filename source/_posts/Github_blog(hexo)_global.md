@@ -28,7 +28,7 @@ tags: 'global'
     
     - **Github 메인화면 내 활동 기록이 기록되지 않는 현상 발견**
         
-        ![화면 캡처 2022-04-12 141218.png](Github_blo%20dbe07/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-04-12_141218.png)
+        ![png](images/Github_blog(hexo)_global/2.png)
         
     
     ---
@@ -36,21 +36,21 @@ tags: 'global'
 - 처음에는 커밋(commit)이라는 단어를 내가 잘못 이해하고 있나 라고 의심을 해서 커밋에 대한 구글링을 했지만 내가 알고 있는 커밋이라는 용어가 틀리지 않았고 어떻게 해야될지 감이 안잡혀 evan 강사님([https://dschloe.github.io/](https://dschloe.github.io/))에게 여쭤보았고 방법을 알려주셨다.
     - **windows 검색 화면에서 웹 자격 증명을 클릭**
         
-        ![png](images/Github_blog(hexo)_global/2.png)
+        ![png](images/Github_blog(hexo)_global/3.png)
         
     
     ---
     
     - **windows 자격 증명**
         
-        ![Untitled](Github_blo%20dbe07/Untitled%201.png)
+        ![png](images/Github_blog(hexo)_global/4.png)
         
     
     ---
     
     - **일반 자격 증명에서 github 목록을 클릭하여 편집을 눌러 계정을 다시 업데이트 한다**
         
-        ![Untitled](Github_blo%20dbe07/Untitled%202.png)
+        ![png](images/Github_blog(hexo)_global/5.png)
         
     
     ---
@@ -63,28 +63,28 @@ tags: 'global'
 - [https://imitursa.tistory.com/3213](https://imitursa.tistory.com/3213) 이 블로그를 참고하며 해결 방법을 작성 하겠습니다.
     - **관리자 권한으로 명령창을 연다**.
         
-        ![png](images/Github_blog(hexo)_global/3.png)
+        ![png](images/Github_blog(hexo)_global/6.png)
         
     
     ---
     
     - **‘git config —system —unset credential.helper’ 명령어를 입력한다.(오타 주의)**
         
-        ![png](images/Github_blog(hexo)_global/4.png)
+        ![png](images/Github_blog(hexo)_global/7.png)
         
     
     ---
     
     - **‘git config —global —unset credential.helper’  명령어를 입력한다.**
         
-        ![png](images/Github_blog(hexo)_global/5.png)
+        ![png](images/Github_blog(hexo)_global/8.png)
         
     
     ---
     
     - **다시 작업 했던 Project(필자는 Pycharm을 사용)로 돌아와 git add, commit, push 를 해주면 계정을 입력하라는 내용이 나온다.**
         
-        ![png](images/Github_blog(hexo)_global/6.png)
+        ![png](images/Github_blog(hexo)_global/9.png)
         
     
     ---
