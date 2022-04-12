@@ -3,7 +3,7 @@ title: "Github_blog(hexo) 연동 오류 -global"
 author: "winters"
 date: '2022-04-12'
 categories: 'github'
-tags: 'tokken'
+tags: 'global'
 ---
 
 
