@@ -6,7 +6,7 @@ categories: 'blog'
 tags: 'blog'
 ---
 
-# Github blog (hexo) bio, job 설정
+### Github blog (hexo) bio(인물소개), job 설정
 
 - 이 글은 Github blog를 관리 및 운영하는데 필자가 겪은 에러, 어려움 등을 해결하는 과정을 기록할 목적으로 만들어졌습니다.
 - 참고: 필자는 tranquilpeak 테마를 표준 테마로 하여 환경 설정 하는 것 이므로 tranquilpeak 테마를 설정 한 뒤 이 글을 보시길 바랍니다.
