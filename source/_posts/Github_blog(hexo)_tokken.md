@@ -18,11 +18,11 @@ tags: 'tokken'
 ---
 
 - 깃허브(Github) 블로그 테마를 변경하면서 무엇을 잘못 건들였는지 git add, commit, push 도 가능하고 블로그에 글도 업데이트 되는데 깃허브 메인 화면의 **30 contributions in the last year 및 내 활동기록이 기록이 되지않는다.**
-    - git add, commit, push 정상 작동
+    - **git add, commit, push 정상 작동**
     
     ![png](images/Github_blog(hexo)_tokken/1.png)
     
-    - Github 메인화면 내 활동 기록이 기록되지 않는 현상 발견
+    - **Github 메인화면 내 활동 기록이 기록되지 않는 현상 발견**
 
     ![png](images/Github_blog(hexo)_tokken/2.png)
 
