@@ -38,7 +38,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
 
 ## Step 01. 설치
 
-- 다운로드 파일을 관리자로 실행한다. 계속 Next 버튼 클릭 후, 아래 파일에서 경로를 수정한다. (이 때, `**Program Files**` 공백이 있는데, 이러한 공백은 환경 설치 시 문제가 될 수 있다.)
+- 다운로드 파일을 관리자로 실행한다. 계속 Next 버튼 클릭 후, 아래 파일에서 경로를 수정한다. (이 때, <u><span style="color:red">`Program Files`</span></u> 공백이 있는데, 이러한 공백은 환경 설치 시 문제가 될 수 있다.)
     
     ![png](images/Apache_Spark_installation/1.png)
     
@@ -53,7 +53,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
 ---
 
 - 이번에는 자바 런타임 환경의 폴더도 동일하게 변경해준다. (변경 클릭 후 수정)
-    - C드라이브 경로에 **`jre`** 폴더를 생성하고 저장한다.
+    - C드라이브 경로에 <u><span style="color:red">`jre`</span></u> 폴더를 생성하고 저장한다.
     
     ![png](images/Apache_Spark_installation/3.png)
     
@@ -82,7 +82,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
 
 ### (2) WinRAR 프로그램 다운로드
 
-- `.tgz` 파일 압축을 풀기 위해 `WinRAR` 을 설치한다.
+- <u><span style="color:red">`.tgz`</span></u> 파일 압축을 풀기 위해 <u><span style="color:red">`WinRAR`</span></u> 을 설치한다.
     - WinRAR: **[https://www.rarlab.com/download.htm](https://www.rarlab.com/download.htm)**
     - 링크에 들어가면 아래 화면이 보이는데 각 컴퓨터 환경에 맞게 설치 바랍니다.
         
@@ -90,11 +90,11 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
         
         ---
         
-    - 다운로드가 완료 되면 위 과정 (1)에서 설치했던 `spark-3.2.0-bin-hadoop3.2.tgz` 파일 압축 풀기(Extract) 실행
+    - 다운로드가 완료 되면 위 과정 (1)에서 설치했던 <u><span style="color:red">`spark-3.2.0-bin-hadoop3.2.tgz`</span></u> 파일 압축 풀기(Extract) 실행
 
 ### **(3) spark 폴더 생성 및 파일 이동**
 
-- C드라이브 안에 `spark` 라는 새로운 폴더 생성 후 앞 서 압축을 풀었던 파일 `spark-3.2.0-bin-hadoop3.2` 폴더 내 모든 파일을 생성한 `spark` 폴더로 옮긴다.
+- C드라이브 안에 <u><span style="color:red">`spark`</span></u> 라는 새로운 폴더 생성 후 앞 서 압축을 풀었던 파일 <u><span style="color:red">`spark-3.2.0-bin-hadoop3.2`</span></u> 폴더 내 모든 파일을 생성한 <u><span style="color:red">`spark`</span></u> 폴더로 옮긴다.
     
     ![png](images/Apache_Spark_installation/7.png)
     
@@ -103,14 +103,14 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
 
 ### (4) [log4j.properties](http://log4j.properties) 파일 수정
 
-- `conf` - `[log4j.properties](http://log4j.properties)` 파일을 연다.
+- <u><span style="color:red">`conf`</span></u> - <u><span style="color:red">`[log4j.properties](http://log4j.properties)`</span></u> 파일을 연다.
     
     ![png](images/Apache_Spark_installation/8.png)
     
     ---
     
 
-- 해당 파일을 메모장으로 연 후(필자는 vscode로 연결), 아래에서 빨간줄을 친 `log4j.rootCategory=INFO` 에서 `INFO` → `ERROR` 로 변경한다.
+- 해당 파일을 메모장으로 연 후(필자는 vscode로 연결), 아래에서 빨간줄을 친 <u><span style="color:red">`log4j.rootCategory=INFO`</span></u> 에서 <u><span style="color:red">`INFO`</span></u> → <u><span style="color:red">`ERROR`</span></u> 로 변경한다.
     - 작업 실행 시, 출력하는 모든 logs 값들을 없앨 수 있다.
         
         ![png](images/Apache_Spark_installation/9.png)
@@ -129,7 +129,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
             ---
             
     - 필자는 **[hadoop-3.2.2](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.2)** 버전을 다운로드 받았다.
-- C드라이브에서 winutils란 이름의 폴더를 생성한 후, 앞서 받은 [**hadoop-3.2.2](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.2)** 파일의 bin 폴더를 옮긴다.
+- C드라이브에서 winutils란 이름의 폴더를 생성한 후, 앞서 받은 [hadoop-3.2.2](https://github.com/cdarlint/winutils/tree/master/hadoop-3.2.2) 파일의 bin 폴더를 옮긴다.
     
     ![png](images/Apache_Spark_installation/11.png)
     
@@ -143,7 +143,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
     c:\winutils\bin> winutils.exe chmod 777 \tmp\hive
     ```
     
-    - 만약, ChangeFileModeByMask error (3) 에러 발생 시, C드라이브에 `tmp\hive` 폴더를 차례대로 생성을 한다.
+    - 만약, ChangeFileModeByMask error (3) 에러 발생 시, C드라이브에 <u><span style="color:red">`tmp\hive`</span></u> 폴더를 차례대로 생성을 한다.
         
         ---
         
@@ -163,7 +163,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
         
         ---
         
-    - 각 사용자 계정에 `사용자 변수 - 새로 만들기 버튼` 을 클릭
+    - 각 사용자 계정에 <u><span style="color:red">`사용자 변수 - 새로 만들기 버튼`</span></u> 을 클릭
         
         ![png](images/Apache_Spark_installation/14.png)
         
@@ -215,7 +215,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
 
 # 스파크 테스트
 
-- CMD 파일을 열고 `c:\spark` 폴더로 경로를 설정 한 뒤 `pyspark` 로 실행
+- CMD 파일을 열고 <u><span style="color:red">`c:\spark`</span></u> 폴더로 경로를 설정 한 뒤 <u><span style="color:red">`pyspark`</span></u> 로 실행
     
     ```bash
     cd c:\spark # 경로를 c:\spark 로 설정
@@ -226,7 +226,7 @@ For Python 3.9, Arrow optimization and pandas UDFs might not work due to the sup
     
     ---
     
-- 해당 `[README.md](http://README.md)` 파일을 불러와서 아래 코드가 실행되는지 확인한다.
+- 해당 <u><span style="color:red">`[README.md](http://README.md)`</span></u> 파일을 불러와서 아래 코드가 실행되는지 확인한다.
     
     ```bash
     >>> rd = sc.textFile("README.md")
