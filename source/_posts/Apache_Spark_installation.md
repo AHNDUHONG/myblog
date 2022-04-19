@@ -24,11 +24,11 @@ Get Spark from the **[downloads page](https://spark.apache.org/downloads.html)*
 
 If you’d like to build Spark from source, visit **[Building Spark](https://spark.apache.org/docs/latest/building-spark.html)**.
 
-Spark runs on both Windows and UNIX-like systems (e.g. Linux, Mac OS), and it should run on any platform that runs a supported version of Java. This should include JVMs on x86_64 and ARM64. It’s easy to run locally on one machine — all you need is to have `java` installed on your system `PATH`, or the `JAVA_HOME` environment variable pointing to a Java installation.
+Spark runs on both Windows and UNIX-like systems (e.g. Linux, Mac OS), and it should run on any platform that runs a supported version of Java. This should include JVMs on x86_64 and ARM64. It’s easy to run locally on one machine — all you need is to have <u><span style="color:red">`java`</span></u> installed on your system <u><span style="color:red">`PATH`</span></u>, or the <u><span style="color:red">`JAVA_HOME`</span></u> environment variable pointing to a Java installation.
 
 Spark runs on Java 8/11, Scala 2.12, Python 3.6+ and R 3.5+. Python 3.6 support is deprecated as of Spark 3.2.0. Java 8 prior to version 8u201 support is deprecated as of Spark 3.2.0. For the Scala API, Spark 3.2.0 uses Scala 2.12. You will need to use a compatible Scala version (2.12.x).
 
-For Python 3.9, Arrow optimization and pandas UDFs might not work due to the supported Python versions in Apache Arrow. Please refer to the latest **[Python Compatibility](https://arrow.apache.org/docs/python/install.html#python-compatibility)** page. For Java 11, `-Dio.netty.tryReflectionSetAccessible=true` is required additionally for Apache Arrow library. This prevents `java.lang.UnsupportedOperationException: sun.misc.Unsafe or java.nio.DirectByteBuffer.(long, int) not available` when Apache Arrow uses Netty internally.
+For Python 3.9, Arrow optimization and pandas UDFs might not work due to the supported Python versions in Apache Arrow. Please refer to the latest **[Python Compatibility](https://arrow.apache.org/docs/python/install.html#python-compatibility)** page. For Java 11, <u><span style="color:red">`-Dio.netty.tryReflectionSetAccessible=true`</span></u> is required additionally for Apache Arrow library. This prevents <u><span style="color:red">`java.lang.UnsupportedOperationException: sun.misc.Unsafe or java.nio.DirectByteBuffer.(long, int) not available`</span></u> when Apache Arrow uses Netty internally.
 
 # 자바 설치
 
