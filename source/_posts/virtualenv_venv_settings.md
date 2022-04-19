@@ -58,7 +58,7 @@ tags: 'venv'
     
 - <u><span style="color:red">`virtualenv venv`</span></u> 로 가상 환경 폴더 생성
     - venv라는 폴더가 생성 되면 정상적으로 실행 된 것이다.
-    - **<u><span style="color:red">`bash: virtualenv: command not found : virtualenv`</span></u>** virtualenv ****설치가 안되어 있어서 생기는 오류 **,** <u><span style="color:red">`pip install virtualenv`</span></u> 로 설치 한 뒤 , <u><span style="color:red">`virtualenv venv`</span></u> 한번 더 실행.
+    - **<u><span style="color:red">`bash: virtualenv: command not found : virtualenv`</span></u>** virtualenv 모듈 설치가 안되어 있어서 생기는 오류 , <u><span style="color:red">`pip install virtualenv`</span></u> 로 설치 한 뒤 , <u><span style="color:red">`virtualenv venv`</span></u> 한번 더 실행.
     
     ![png](images/virtualenv_venv_settings/6.png)
     
@@ -72,6 +72,6 @@ tags: 'venv'
         
         ---
         
-- 로컬 환경으로 다시 전환 하려면 <u><span style="color:red">`deactivate`</span> 로 가능하다.
+- 로컬 환경으로 다시 전환 하려면 <u><span style="color:red">`deactivate`</span> 를 입력하면 가능하다.
     
     ![png](images/virtualenv_venv_settings/8.png)
