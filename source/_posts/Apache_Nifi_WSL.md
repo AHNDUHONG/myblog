@@ -56,7 +56,7 @@ $ sudo apt install openjdk-11-jre-headless
 - <u><span style="color:red">`nifi-1.16.0/bin`</span></u> 폴더로 경로를 이동한다
     
     ```bash
-    # cd nifi-1.16.0/bin
+    $ cd nifi-1.16.0/bin
     ```
     
     ![png](images/Apache_Nifi_WSL/2.png)
@@ -85,7 +85,7 @@ $ sudo apt install openjdk-11-jre-headless
 
 ## Step 03. Nifi 실행
 
-- [nifi-env.sh](http://nifi-env.sh) 파일을 실행 한다.
+- <u><span style="color:red">`nifi-env.sh`</span></u> 파일을 실행 한다.
     
     ```bash
     $ sudo ./nifi.sh start
