@@ -63,7 +63,7 @@ pip install ipython-sql
 
 ## 모듈 에러(**ModuleNotFoundError**: No module named 'sql')
 
-- 이 에러는 sql이라는 이름의 모듈을 설치가 안되었을때 나오는 에러인데 라이브러리를 설치를 해줬는데도 불구하고 <u><span style="color:red">`**ModuleNotFoundError**: No module named 'sql'`</span></u> 라는 에러가 나온다. 그럴 땐 내가 설치를 한 라이브러리가 어느 경로에 저장되었는지 확인해야 한다. (필자는 설치를 할 때 나온 메세지를 통해 확인함.)
+- 이 에러는 sql이라는 이름의 모듈을 설치가 안되었을때 나오는 에러인데 라이브러리를 설치를 해줬는데도 불구하고 <u><span style="color:red">`ModuleNotFoundError: No module named 'sql'`</span></u> 라는 에러가 나온다. 그럴 땐 내가 설치를 한 라이브러리가 어느 경로에 저장되었는지 확인해야 한다. (필자는 설치를 할 때 나온 메세지를 통해 확인함.)
   ```bash
   import sys
   sys.executable   -- 현재 파일 파이썬 경로 확인
