@@ -40,10 +40,11 @@ tags: 'VSCode'
   ***
 - 여기에서 VS Code 재 시작을 하도록 한다.
 - 빨간색으로 밑줄 친 플러스 모양을 클릭하면 New Connection 버튼이 있는데 클릭하면 새로운 Connection이 생성된다.
+
   - 단, 여기에서 새로운 Connection은 기존에 이미 만들어진 Connection을 의미한다.
   - 따라서, 기존 SQL Developer에서 생성했던 것과 동일하게 작성을 해야한다.
 
-![png](images/VSCode_Connect_Oracle/6.png)
+    ![png](images/VSCode_Connect_Oracle/6.png)
 
 ---
 
