@@ -1,4 +1,10 @@
-# Jupyter Notebook에서 SQL 실행
+---
+title: 'Jupyter Notebook에서 SQL 실행'
+author: 'winters'
+date: '2022-04-28'
+categories: 'SQL'
+tags: 'Jupyter'
+---
 
 - 이 글은 **Hanjeongin** 님의 [https://rain-grouse-1fe.notion.site/Jupyter-Notebook-SQL-0973777326e2426da0797f75c09ad0bb](https://www.notion.so/Jupyter-Notebook-SQL-0973777326e2426da0797f75c09ad0bb) 노션(Notion)을 참고하여 작성된 글 입니다.
 
