@@ -1,6 +1,6 @@
 ---
-title: "[Vs code] Microsoft Visual Studio Code\unins000.exe 오류"
-author: "winters"
+title: '[Vs code] Microsoft Visual Studio Code unins000.exe 오류'
+author: 'winters'
 date: '2022-05-06'
 categories: 'Error'
 tags: 'Vs code'
