@@ -41,13 +41,13 @@ tags: 'kakaotalk'
 - 챗봇 관리자센터 OBT를 신청해야 해당 채널 챗봇을 만들수가 있으므로 작성한 뒤 신청한다.
 - 구글 검색창에서 카카오톡 오픈 빌더를 검색한다.
 
-![png](images/kakaotalk_chatbot_request/4.png)
+    ![png](images/kakaotalk_chatbot_request/4.png)
 
----
+    ---
 
-![png](images/kakaotalk_chatbot_request/5.png)
+    ![png](images/kakaotalk_chatbot_request/5.png)
 
----
+    ---
 
 - 만들었던 카카오톡 채널 대시보드로 이동한 뒤 관리 - 상세설정 으로 들어간다.
     
@@ -70,4 +70,4 @@ tags: 'kakaotalk'
 
 - 아래와 같은 안내가 나오면 신청은 완료된 것이다.
 
-![png](images/kakaotalk_chatbot_request/9.png)
+    ![png](images/kakaotalk_chatbot_request/9.png)
