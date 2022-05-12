@@ -59,21 +59,21 @@ tags: 'Github'
 
 ### Git 연동 과정 중 오류 발생 및 해결
 
-- 위의 오류는 내 컴퓨터 저장소의 폴더에 없는 파일이 이미 내 Github Repository에 기록 되어있기때문에 생기는 것 이므로 `git pull`로 파일을 가져오기로 한다.
-    - `git remote -v` 로 원격 저장소 이름을 확인 한다.
+- 위의 오류는 내 컴퓨터 저장소의 폴더에 없는 파일이 이미 내 Github Repository에 기록 되어있기때문에 생기는 것 이므로 <u><span style="color:red">`git pull`</span></u>로 파일을 가져오기로 한다.
+    - <u><span style="color:red">`git remote -v`</span></u> 로 원격 저장소 이름을 확인 한다.
     
     ![png](images/Github_with_members/5.png)
     
     ---
     
-    - 위 사진으로 확인한 origin 저장소를 main branch로 pull을 하기 위해 `git pull origin main` 작성
+    - 위 사진으로 확인한 origin 저장소를 main branch로 pull을 하기 위해 <u><span style="color:red">`git pull origin main`</span></u> 작성
         
         ![png](images/Github_with_members/6.png)
         
         ---
         
-    - `fatal: refusing to merge unrelated histories` 오류가 발생하여 `git pull origin 브런치명 --allow-unrelated-histories` 을 사용하여 오류 해결
-        - `--allow-unrelated-histories` 이 명령 옵션은 이미 존재하는 두 프로젝트의 기록(history)을 저장하는 드문 상황에 사용된다고 한다. 즉, git에서는 서로 관련 기록이 없는 이질적인 두 프로젝트를 병합할 때 기본적으로 거부하는데, 이것을 허용해 주는 것이다.
+    - <u><span style="color:red">`fatal: refusing to merge unrelated histories`</span></u> 오류가 발생하여 <u><span style="color:red">`git pull origin 브런치명 --allow-unrelated-histories`</span></u> 을 사용하여 오류 해결
+        - <u><span style="color:red">`--allow-unrelated-histories`</span></u> 이 명령 옵션은 이미 존재하는 두 프로젝트의 기록(history)을 저장하는 드문 상황에 사용된다고 한다. 즉, git에서는 서로 관련 기록이 없는 이질적인 두 프로젝트를 병합할 때 기본적으로 거부하는데, 이것을 허용해 주는 것이다.
             - 참고 URL: [https://gdtbgl93.tistory.com/63](https://gdtbgl93.tistory.com/63)
         
         ![png](images/Github_with_members/7.png)
@@ -113,7 +113,7 @@ tags: 'Github'
 
 - Branch 확인을 한다
     - 필자가 현재 사용하고 있는 branch는 master다.
-    - 아래 사진은 모든 branch를 *로 나타내고 그 중 현재 사용중인 branch를 **초록색**으로 보여준다.
+    - 아래 사진은 모든 branch를 *로 나타내고 그 중 현재 사용중인 branch를 <u><span style="color:green">**초록색**</span></u>으로 보여준다.
     
     ![png](images/Github_with_members/12.png)
     
@@ -151,7 +151,7 @@ tags: 'Github'
 # Branch 상태에서 push, pull 하기
 
 - **Push**
-    - 임의로 README에 데이터 추가 후 `add, commit, push` 하기
+    - 임의로 README에 데이터 추가 후 <u><span style="color:red">`add, commit, push`</span></u> 하기
         
         > 이때 add, commit은 동일한 방식을 사용하고 push는 맨 처음 할 때는 아래와 같은 코드를 사용 해주어야 그 뒤부터는 간단하게 push로 사용이 가능하다.
         > 
