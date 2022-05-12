@@ -16,7 +16,7 @@ tags: 'Github'
 
 - Git hub의 새로운 Repository를 만들어 팀원들과 함께 관리를 할 수 있게 권한을 주는 과정을 설명한다.
 
-# Repositoy 생성
+# Step 1. Repositoy 생성
 
 - Git hub 홈페이지 repository를 생성해준다.
     - 아래 체크 박스에 있는 항목들은 필요에 따라서 선택적으로 체크하면 된다.
@@ -26,7 +26,7 @@ tags: 'Github'
 
 ---
 
-# 폴더에 Git 연동하기
+# Step 2. 폴더에 Git 연동하기
 
 - 아래 사진의 네모 상자의 코드를 입력하면 연동이 완료된다.( 기존 git hub 새로운 repository연동과 같다)
     
@@ -88,7 +88,7 @@ tags: 'Github'
     ---
     
 
-# Git Contributors 추가하기 (다른 사람에게 Repository 수정 및 생성 권한 주기)
+# Step 3. Git Contributors 추가하기 (다른 사람에게 Repository 수정 및 생성 권한 주기)
 
 - Github 홈페이지로 돌아와서 각자가 만든 Repository에 접속하여 Settings > Collaborators > Manage access 경로로 들어가 Add people로 권한을 줄 사람을 추가한다.
     
@@ -109,7 +109,7 @@ tags: 'Github'
     ---
     
 
-# Branch 만들기
+# Step 4. Branch 만들기
 
 - Branch 확인을 한다
     - 필자가 현재 사용하고 있는 branch는 master다.
@@ -148,7 +148,7 @@ tags: 'Github'
     ```
     
 
-# Branch 상태에서 push, pull 하기
+# Step 5. Branch 상태에서 push, pull 하기
 
 - **Push**
     - 임의로 README에 데이터 추가 후 <u><span style="color:red">`add, commit, push`</span></u> 하기
