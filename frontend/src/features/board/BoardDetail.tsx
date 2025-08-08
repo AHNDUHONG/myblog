@@ -11,7 +11,7 @@ const BoardDetail = ({ post}: Props) => {
 
     return (
         <div className="space-y-4">
-            <div className="border-b pb-2">
+            <div className="pb-2 border-b">
                 <h1 className="text-3xl font-bold">{post.title}</h1>
                 <p className="text-sm text-gray-500">
                     {post.category} | {post.createdAt} | by {post.author}

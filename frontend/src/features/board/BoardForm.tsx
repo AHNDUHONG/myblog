@@ -32,7 +32,7 @@ const BoardForm = () => {
                 <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value as 'Web Development' | 'Mobile Development' | 'UI/UX' | 'Design')}
-                    className="border p-2 rounded w-full">
+                    className="w-full p-2 border rounded">
                         <option value="Web development">Web development</option>
                         <option value="Mobile development">Mobile development</option>
                         <option value="UI/UX">UI/UX</option>
@@ -47,7 +47,7 @@ const BoardForm = () => {
                     required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
-                    className="border p-2 rounded w-full"
+                    className="w-full p-2 border rounded"
                     placeholder="제목을 입력하세요"
                 />
             </div>
@@ -59,14 +59,14 @@ const BoardForm = () => {
                     rows={10}
                     value={content}
                     onChange={(e) => setContent(e.target.value)}
-                    className="border p-2 rounded w-full"
+                    className="w-full p-2 border rounded"
                     placeholder="내용을 입력하세요"
                 />
             </div>
 
             <button
                 type="submit"
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:big-blue-700"
+                className="px-4 py-2 text-white bg-blue-600 rounded hover:big-blue-700"
             >
                 작성하기
             </button>
