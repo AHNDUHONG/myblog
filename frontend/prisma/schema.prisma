@@ -14,6 +14,11 @@ datasource db {
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
+enum Role {
+  ADMIN
+  USER
+}
+
 model Post {
   id        Int      @id @default(autoincrement())
   title     String
@@ -21,5 +26,27 @@ model Post {
   category  String
   author    String
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String?
+  password  String
+  role      Role     @default(USER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model ContactMessage {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String
+  message    String
+  createdAt  DateTime @default(now())
+  // (선택) 응답 상태/내용
+  answered   Boolean  @default(false)
+  answer     String? 
+  answeredAt DateTime?
 }

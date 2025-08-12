@@ -1,4 +1,4 @@
-import { Post } from "./mockData";
+import { Post } from "@prisma/client";
 
 interface Props {
     post: Post | null;
