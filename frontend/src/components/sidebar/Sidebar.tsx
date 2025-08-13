@@ -38,7 +38,7 @@ export default function Sidebar() {
 
   return (
     <aside className="w-56 p-4 bg-gray-100 border-r">
-      <Link href="/" className="font-bold">MyBlog</Link>
+      <Link href="/" className="font-bold">WB</Link>
 
       {/* 기본 메뉴 */}
       <nav className="flex flex-col space-y-1">

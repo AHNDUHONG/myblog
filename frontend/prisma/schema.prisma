@@ -49,4 +49,26 @@ model ContactMessage {
   answered   Boolean  @default(false)
   answer     String? 
   answeredAt DateTime?
+
+  emailSentCount  Int       @default(0)
+  lastEmailSentAt DateTime?
+
+  emailLogs ContactEmailLog[]
+}
+
+model ContactEmailLog {
+  id        Int              @id @default(autoincrement())
+  message   ContactMessage   @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  messageId Int
+
+  to        String
+  subject   String
+  bodyPreview String?
+  success   Boolean
+  error     String?
+  providerMessageId String?
+
+  createdAt DateTime @default(now())
+
+  @@index([messageId, createdAt])
 }
