@@ -67,6 +67,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     ],
   }
 
+  const navMoreItems = status === "authenticated"
+    ? data.navMore.filter((item) => item.name !== "Admin")
+    : data.navMore
+
   return (
     <Sidebar collapsible="icon" className="flex flex-col w-50 h-screen" {...props}>
       <SidebarHeader className="h-20 mt-3 mx-2 flex items-center gap-3">
@@ -84,7 +88,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <NavMain items={data.navMain} />
         </div>
         <div className="flex">
-          <NavMore items={data.navMore} />
+          <NavMore items={navMoreItems} />
         </div>
       </SidebarContent>
       {session && (

@@ -2,6 +2,15 @@ import { prisma } from "@/lib/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
 import { authOptions } from "../auth/[...nextauth]";
 import { getServerSession } from "next-auth";
+import { z } from "zod";
+
+const PostSchema = z.object({
+  title: z.string().min(1),
+  content: z.string().min(1),
+  category: z.string().min(1),
+  author: z.string().min(1),
+});
+
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const id = Number(req.query.id);
@@ -25,10 +34,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }
 
         if (req.method === 'PUT') {
-            const { title, content, category, author } = req.body || {};
-            if (!title || !content || !category || !author) {
-                return res.status(400).json({ message: '필수 항목 누락.' });
+            const parsed = PostSchema.safeParse(req.body);
+            if (!parsed.success) {
+                return res.status(400).json({ message: "잘못된 입력", issues: parsed.error.flatten() });
             }
+            const { title, content, category, author } = parsed.data;
             const updated = await prisma.post.update({
                 where: { id },
                 data: { title, content, category, author },

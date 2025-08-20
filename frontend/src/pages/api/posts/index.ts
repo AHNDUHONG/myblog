@@ -29,7 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const session = await getServerSession(req, res, authOptions);
             const role = (session?.user as { role?: string } | undefined)?.role;
             if (!session || role !== "ADMIN") {
-                return res.status(400).json({ message: '필수 항목 누락.' });
+                return res.status(401).json({ message: 'Unauthorized' });
             }
 
             // zod로 입력 검증
@@ -57,6 +57,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } catch (err: unknown) {
         console.error('[POST /api/posts] ERROR =', err);
         const message = err instanceof Error ? err.message : String(err);
-        return res.status(500).json({ message});
+        return res.status(500).json({ message });
     }
 }

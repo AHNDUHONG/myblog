@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {
   Folder,
   type LucideIcon,
@@ -20,17 +21,26 @@ export function NavMore({
     icon: LucideIcon
   }[]
 }) {
+  const isExternal = (url: string) => /^https?:\/\//.test(url)
+
   return (
-    <SidebarGroup className="group-data-[collapsible=icon]:hidden">
+    <SidebarGroup>
       <SidebarGroupLabel>More</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.name}>
-            <SidebarMenuButton asChild className="h-10">
-              <a href={item.url}>
-                <item.icon className="w-8 h-8" />
-                <span className="text-base">{item.name}</span>
-              </a>
+            <SidebarMenuButton asChild tooltip={item.name} className="h-10">
+              {isExternal(item.url) ? (
+                <a href={item.url} target="_blank" rel="noreferrer">
+                  <item.icon className="w-8 h-8" />
+                  <span className="text-base">{item.name}</span>
+                </a>
+              ) : (
+                <Link href={item.url}>
+                  <item.icon className="w-8 h-8" />
+                  <span className="text-base">{item.name}</span>
+                </Link>
+              )}
             </SidebarMenuButton>
           </SidebarMenuItem>
         ))}

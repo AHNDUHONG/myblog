@@ -1,22 +1,22 @@
 import dynamic from "next/dynamic";
 import { ReactNode } from "react";
-import { SidebarProvider } from "../ui/sidebar";
+import { SidebarProvider, SidebarInset } from "../ui/sidebar";
 
-const Sidebar = dynamic(() => import("@/components/app-sidebar").then(mod => ({ default: mod.AppSidebar })), { ssr: false });
+// const Sidebar = dynamic(() => import("@/components/app-sidebar").then(mod => ({ default: mod.AppSidebar })), { ssr: false });
+import { AppSidebar as Sidebar } from "@/components/app-sidebar";
 
 type Props = { children: ReactNode };
 
 export default function Layout({ children }: Props) {
     return (
-        <SidebarProvider>
-            <div className="flex min-h-screen">
+        <SidebarProvider> 
+            <div className="flex w-full">
                 {/* 좌측 사이드바 */}
-                <Sidebar />
+                <Sidebar variant="inset" />
                 {/* 본문 영역 */}
-                <main className="flex-1 p-6 overflow-auto">
-                    {/* 2번 패턴(본문 내부 제한)도 같이 쓰면 깔끔 */}
-                    <div className="mx-auto w-full max-w-7xl">{children}</div>
-                </main>
+                <SidebarInset>
+                    <div className="mx-auto w-full max-w-7xl p-6">{children}</div>
+                </SidebarInset>
             </div>
         </SidebarProvider>
     );
