@@ -15,7 +15,9 @@ export default function Layout({ children }: Props) {
                 <Sidebar variant="inset" />
                 {/* 본문 영역 */}
                 <SidebarInset>
-                    <div className="w-full p-6 mx-auto max-w-7xl">{children}</div>
+                    <div className="flex w-full h-full">
+                        <div className="w-full max-w-4xl p-6 mx-auto">{children}</div>
+                    </div>
                 </SidebarInset>
             </div>
         </SidebarProvider>

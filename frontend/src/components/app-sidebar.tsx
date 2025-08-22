@@ -22,6 +22,11 @@ import {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { data: session, status } = useSession()
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // This is sample data.
   const data = {
@@ -67,7 +72,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     ],
   }
 
-  const navMoreItems = status === "authenticated"
+  // 서버사이드 렌더링 시에는 기본값 사용
+  const navMoreItems = mounted && status === "authenticated"
     ? data.navMore.filter((item) => item.name !== "Admin")
     : data.navMore
 
@@ -91,7 +97,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <NavMore items={navMoreItems} />
         </div>
       </SidebarContent>
-      {session && (
+      {mounted && session && (
         <SidebarFooter className="mt-auto">
           <NavUser user={data.user} />
         </SidebarFooter>
