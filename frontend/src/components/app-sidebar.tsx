@@ -72,18 +72,18 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     : data.navMore
 
   return (
-    <Sidebar collapsible="icon" className="flex flex-col w-50 h-screen" {...props}>
-      <SidebarHeader className="h-20 mt-3 mx-2 flex items-center gap-3">
+    <Sidebar collapsible="icon" className="flex flex-col h-screen w-50" {...props}>
+      <SidebarHeader className="flex items-center h-20 gap-3 mx-2 mt-3">
         <div className="flex flex-col">
           <span className="text-[25px] font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             Winters Blog
           </span>
-          <span className="text-xs flex justify-center text-muted-foreground">
+          <span className="flex justify-center text-xs text-muted-foreground">
             Daily Dev, Honest Notes
           </span>
         </div>
       </SidebarHeader>
-      <SidebarContent className="gap-16 mt-10 flex flex-col">
+      <SidebarContent className="flex flex-col gap-16 mt-10">
         <div className="pt-10">
           <NavMain items={data.navMain} />
         </div>

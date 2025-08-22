@@ -10,12 +10,12 @@ type Props = { children: ReactNode };
 export default function Layout({ children }: Props) {
     return (
         <SidebarProvider> 
-            <div className="flex w-full">
+            <div className="flex w-full bg-slate-50">
                 {/* 좌측 사이드바 */}
                 <Sidebar variant="inset" />
                 {/* 본문 영역 */}
                 <SidebarInset>
-                    <div className="mx-auto w-full max-w-7xl p-6">{children}</div>
+                    <div className="w-full p-6 mx-auto max-w-7xl">{children}</div>
                 </SidebarInset>
             </div>
         </SidebarProvider>
