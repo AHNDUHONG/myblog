@@ -40,12 +40,22 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         title: "Home",
         url: "/",
         icon: House,
-        isActive: true,
       },
       {
         title: "About Me",
         url: "/project",
         icon: SquareUserRound,
+        items: [
+          {
+            title: "Profile",
+            url: "/#",
+          },
+          {
+            title: "Project",
+            url: "/project",
+          },
+
+        ]
       },
       {
         title: "Board",
@@ -73,9 +83,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   }
 
   // 서버사이드 렌더링 시에는 기본값 사용
-  const navMoreItems = mounted && status === "authenticated"
-    ? data.navMore.filter((item) => item.name !== "Admin")
-    : data.navMore
+  const navMoreItems = React.useMemo(() => {
+    if (!mounted) {
+      return data.navMore // 마운트 전에는 모든 항목 표시
+    }
+    return status === "authenticated"
+      ? data.navMore.filter((item) => item.name !== "Admin")
+      : data.navMore
+  }, [mounted, status, data.navMore])
 
   return (
     <Sidebar collapsible="icon" className="flex flex-col h-screen w-50" {...props}>

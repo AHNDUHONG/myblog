@@ -6,18 +6,18 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
     return (
-        <div className="border p-4 rounded-lg shadow hover:shadow-md transition space-y-2">
+        <div className="p-4 space-y-2 transition border rounded-lg shadow hover:shadow-md">
             <h2 className="text-xl font-bold">{project.name}</h2>
             <p className="text-gray-600">{project.description}</p>
             <div className="flex flex-wrap gap-2 text-sm tet-white">
                 {project.techStack.map((tech) => (
-                    <span key={tech} className="bg-blue-500 px-2 px-2 py-1 rounded">
+                    <span key={tech} className="px-2 py-1 bg-blue-500 rounded">
                         {tech}
                     </span>
                 ))}
             </div>
 
-            <div className="flex gap-4 mt-2 text-blue-600 text-sm">
+            <div className="flex gap-4 mt-2 text-sm text-blue-600">
                 {project.github && (
                     <a
                         href={project.github}
